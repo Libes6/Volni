@@ -490,12 +490,15 @@ strong{
 }
 
 .video-wrapper{
+    display: none;
     text-align: center;
     width: 1006px;
     @media  (max-width: 1000px) {
         width: 100%;
     }
-
+}
+.video-wrapper-asynchronous{
+    display: block;
 }
 .video_title{
     font-style: normal;
