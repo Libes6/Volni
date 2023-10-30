@@ -1,7 +1,7 @@
 .container{
-    max-width: 1566px;
+    max-width: 1556px;
     margin: 0 auto;
-    padding: 0 25px;
+    padding: 0 20px;
 
     @media only screen and (max-width: 768px) {
         width: 100%;
@@ -92,20 +92,6 @@
 strong{
     font-weight: 700;
 }
-@keyframes header-animation {
-    from {
-        display: none;
-        transform:translateY(-10px);
-    }
-    50%{
-        display: block;
-    }
-    to {
-
-        transform:translateY(0px);
-    }
-}
-
 .header{
     padding: 29px 0;
     position: sticky;
@@ -120,10 +106,7 @@ strong{
 }
 
 .header .container{
-
-    @media (max-width: 375px) {
-        padding: 0 15px;
-    }
+    /*padding: 0 15px;*/
 }
 
 .header-transform{
@@ -135,7 +118,6 @@ strong{
     border-bottom: 1px solid rgba(172,172,172,0.5);
     animation: header-animation ease 400ms;
 }
-
 
 .header_grid{
     display: flex;
@@ -150,7 +132,7 @@ strong{
 }
 .header_entry .btn-secondary{
     @media (max-width: 560px) {
-         padding: 0;
+        padding: 0;
         width: 121px;
         background-color: var(--grean);
         color: white;
@@ -160,7 +142,7 @@ strong{
     }
 }
 .header_grid nav{
-    @media (max-width: 900px) {
+    @media (max-width: 1000px) {
         display: none;
     }
 }
@@ -491,16 +473,13 @@ strong{
    display: flex;
     justify-content: center;
     padding: 190px 0 120px 0;
+
     background-image: url('../img/icon/video-bg.svg');
     background-repeat: repeat;
     background-position:  left  bottom -446px; ;
     background-size: inherit;
     @media  (max-width: 1200px) {
         background-image:none;
-        padding: 120px 0 ;
-    }
-    @media  (max-width: 560px) {
-        padding: 60px 0;
     }
 }
 
@@ -569,9 +548,6 @@ strong{
             display: none;
         }
     }
-    @media  (max-width: 1200px) {
-        margin: 0;
-    }
 }
 .prices_up{
     position: absolute;
@@ -625,34 +601,31 @@ strong{
     border-radius: 20px;
     max-width: 448px;
     min-width: 333px;
-    /*width: 448px;*/
     min-height: 483px;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     @media  (max-width: 560px) {
-        /*width: 333px;*/
         padding: 30px 20px;
     }
     @media  (max-width: 375px) {
         min-width: 280px;
     }
 
-    @media  (max-width: 320px) {
-        width: 300px;
-    }
-
 
 }
 .prices_element-title{
-    color: #2C2C2C;
     font-family: Evolventa;
     font-size: clamp(2rem, 1.8786rem + 0.5178vw, 2.5rem);
+    color: #FFF;
     font-style: normal;
     font-weight: 400;
     line-height: 110.008%;
     margin-bottom: 24px;
+    padding: 10px 57px 14px 57px;
+    background-color: var(--grean);
+    border-radius: 34px;
 }
 .prices_element-list{
     color: #2C2C2C;

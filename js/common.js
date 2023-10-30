@@ -1,5 +1,5 @@
 window.addEventListener ("scroll",() => {
-    const header =  document.querySelector('.header-transform')
+    const header =  document.querySelector('.header')
     const video = document.querySelector('.video-wrapper')
     if (window.scrollY>header.offsetHeight){
         header.classList.add("header-fix")
