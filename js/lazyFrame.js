@@ -4,7 +4,7 @@ if (frame.length>0){
     let options = {
         root: null,
         rootMargin: "0px",
-        threshold: 0.7,
+        threshold: 0.4,
     };
     const callbackFrame= (entries, observer)=>{
         entries.forEach((entry) => {
